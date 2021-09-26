@@ -1,1 +1,1 @@
-Esse projeto serve para modificar o valor das seguintes moedas: Real(BR), Dólar(EUA), Euro(EU), Libra(UK), e Bitcoin. Conforme da sua preferencia.
+Esse projeto serve para modificar o valor das seguintes moedas conforme sua preferência: Real(BR), Dólar(EUA), Euro(EU), Libra(UK), e Bitcoin. 
