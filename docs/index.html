@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de moedas</title>
+  <script  src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="page-title">
+    Conversor de moedas
+  </h1>
+ 
+  <p><small>(Cotação do dia 25/09/2021)</small></p>
+
+  <label for="valor">
+    Insira o valor e seleciona a moeda que deseja converter:
+  </label><br>
+  <input type="number" id="valor" size="2" /><br>
+  <br>
+
+  <!-- Botões para selecionar moeda de entrada -->
+      <table align="center" class="moeda">
+        <tr>
+          <td style="background-color: rgba(0, 0, 0, 0.7);">
+            Moeda original:<br>
+            <input type="radio" id="real_in" name="moeda_in" value="real_in" checked><label for="real_in">Real (BR)</label><br>
+            <input type="radio" id="dolar_in" name="moeda_in" value="dolar_in"><label for="dolar_in">Dólar (EUA)</label><br>
+            <input type="radio" id="euro_in" name="moeda_in" value="euro_in"><label for="euro_in">Euro (EU)</label><br>
+            <input type="radio" id="libra_in" name="moeda_in" value="libra_in"><label for="libra_in">Libra (UK)</label><br>
+            <input type="radio" id="btc_in" name="moeda_in" value="btc_in"><label for="btc_in">Bitcoin</label><br>
+          </td>
+
+          <td>&nbsp;</td>
+          <td style="background-color: rgba(0, 0, 0, 0.7)">
+            Converter para:<br>
+            <input type="radio" id="real_out" name="moeda_out" value="real_out"><label for="real_out">Real (BR)</label><br>
+            <input type="radio" id="dolar_out" name="moeda_out" value="dolar_out" checked><label for="dolar_out">Dólar (EUA)</label><br>
+            <input type="radio" id="euro_out" name="moeda_out" value="euro_out"><label for="euro_out">Euro (EU)</label><br>
+            <input type="radio" id="libra_out" name="moeda_out" value="libra_out"><label for="libra_out">Libra (UK)</label><br>
+            <input type="radio" id="btc_out" name="moeda_out" value="btc_out"><label for="btc_out">Bitcoin</label><br>
+          </td>
+      </table>
+  <button type="submit" onclick="Converter()">Converter</button>
+  <h2 id="valorConvertido"></h2><br><br>
+</div>
+  
+
+</body>
+</html>
